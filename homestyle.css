@@ -1,27 +1,27 @@
-ul {
-    list-style-type: none;
-    margin: 0;
+#nav {
+    width:890px;
+    margin:0 auto;
+    list-style:none;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-}
 
-li {
-    float: left;
 }
-
-li a {
-    display: block;
+#nav li {
+    float:left;
+}
+#nav a {
+    display:block;
+    text-align:center;
+    width:150px;
     color: white;
-    text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
 }
 
 li a:hover {
     background-color: #111;
 }
-
 .signupleft {
     vertical-align: middle;
     float:left;
