@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>NMTservlet</servlet-name>
+        <servlet-class>NMTservlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>registration</servlet-name>
+        <servlet-class>user.register.registration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>attemptlogin</servlet-name>
+        <servlet-class>attemptlogin</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>login_check</servlet-name>
+        <servlet-class>login_check</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NMTservlet</servlet-name>
+        <url-pattern>/NMTservlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registration</servlet-name>
+        <url-pattern>/registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>attemptlogin</servlet-name>
+        <url-pattern>/attemptlogin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>login_check</servlet-name>
+        <url-pattern>/login_check</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>WEB-INF/index.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>

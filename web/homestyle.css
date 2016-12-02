@@ -1,0 +1,43 @@
+#nav {
+    width:890px;
+    margin:0 auto;
+    list-style:none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+
+}
+#nav li {
+    float:left;
+}
+#nav a {
+    display:block;
+    text-align:center;
+    width:150px;
+    color: white;
+    padding: 14px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+.signupleft {
+    vertical-align: middle;
+    float:left;
+    width: 50%;
+}
+
+.signupright {
+    float: right;
+    width: 50%;
+}
+
+.vr {
+    width:10px;
+    background-color:#000;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:150px;
+}
